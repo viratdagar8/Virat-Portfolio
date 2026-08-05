@@ -91,7 +91,8 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 2rem;
+    flex-direction: column;
 }
 .about img{
     width: 30vw;
@@ -133,6 +134,9 @@ section{
     font-weight: 500;
     text-wrap: nowrap;
     transition: 0.2s ease-in-out;
+    display: inline-block;
+    text-align: center;
+  
 }
 .btn:hover{
     background: black;
@@ -175,12 +179,8 @@ section{
     color: #fff;
 }
 .project-card img{
-    width: 100%;
-    border-radius: 1rem;
-}
-.project-card img{
-width: 20vw;
-border-radius: 1rem;
+width:100%;
+height:auto;
 }
 .project-card:hover.btn{
     border: 2px solid rgb(251, 252, 253);
@@ -198,7 +198,7 @@ border-radius: 1rem;
 }
 
 
- .input-box{
+.input-box{
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -311,7 +311,7 @@ footer ul li a{
         width:100%;
         padding: 1rem;
         color: white;
-        display: flex;
+        display: none;
         flex-direction: column;
         text-align: center;
         background: black;
@@ -322,7 +322,7 @@ footer ul li a{
         padding: 1rem;
     }
     .nav-links.active{
-        display: block;
+        display: flex;
     }
     header{
         padding: 1rem 5rem;
